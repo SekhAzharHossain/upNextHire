@@ -1,13 +1,59 @@
 import {Button} from "./components/ui/button"
+import { createBrowserRouter,RouterProvider } from "react-router-dom"
+import AppLayout from "./layouts/AppLayout"
+import LandingPage from "./pages/LandingPage"
+import OnBoarding from "./pages/OnBoarding"
+import JobPage from "./pages/JobPage"
+import JobsPage from "./pages/JobsPage"
+import PostJob from "./pages/PostJob"
+import SaveJobs from "./pages/SaveJobs"
+import MyJob from "./pages/MyJob"
+import JobListing from "./pages/JobListing"
+
+const router= createBrowserRouter([
+  {
+    element:<AppLayout/>,
+    children:[
+      {
+        path:"/",
+        element:<LandingPage/>,
+      },
+      {
+        path:"/onboarding",
+        element:<OnBoarding/>
+      },
+      {
+        path:"/joblisting",
+        element:<JobListing/>
+      },
+      {
+        path:"/jobspage",
+        element:<JobsPage/>
+      },
+      {
+        path:"/jobpage/:id",
+        element:<JobPage/>
+      },
+      {
+        path:"/postjob",
+        element:<PostJob/>
+      },
+      {
+        path:"/savejobs",
+        element:<SaveJobs/>
+      },
+      {
+        path:"/myjobs",
+        element:<MyJob/>
+      }
+
+
+    ]
+  }
+])
 
 function App() {
-  
-
-  return (
-    <div className="flex flex-col items-center justify-center min-h-svh">
-      <Button>Click me</Button>
-    </div>
-  )
+  return <RouterProvider router={router}/>
 }
 
 export default App
