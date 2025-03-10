@@ -1,0 +1,35 @@
+[
+    {
+      "question": "What is UpNextHire?",
+      "answer": "UpNextHire is a job portal where job seekers can find opportunities and recruiters can hire top talent efficiently."
+    },
+    {
+      "question": "Is UpNextHire free to use?",
+      "answer": "Yes, job seekers can create profiles and apply for jobs for free. Recruiters may have premium options for advanced features."
+    },
+    {
+        "question": "What industries does UpNextHire cover?",
+        "answer": "We cover various industries, including tech, finance, healthcare, marketing, and more."
+    },
+    {
+        "question": "How can I improve my chances of getting hired?",
+        "answer": "Make sure to complete your profile, upload a professional resume, and apply to jobs that match your skills."
+    },
+    {
+      "question": "How do I apply for a job?",
+      "answer": "Simply search for jobs, click on a listing, and press the 'Apply Now' button to submit your application."
+    },
+    {
+      "question": "How do I contact a recruiter?",
+      "answer": "Once you apply for a job, recruiters can view your profile and contact you directly if you are shortlisted."
+    },
+    {
+      "question": "How do I reset my password?",
+      "answer": "Go to the login page and click on 'Forgot Password' to reset your password via email."
+    },
+    {
+      "question": "Does UpNextHire offer support?",
+      "answer": "Yes, you can reach out to our support team via email or live chat for assistance."
+    }
+]
+  

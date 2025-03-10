@@ -9,8 +9,7 @@ import PostJob from "./pages/PostJob"
 import SaveJobs from "./pages/SaveJobs"
 import MyJob from "./pages/MyJob"
 import JobListing from "./pages/JobListing"
-
-import { supabase } from '../utils/supabase'
+import ProtectedRoute from "./components/protectedRoute"
 
 import { ThemeProvider } from "./components/theme-provider"
 
@@ -24,31 +23,34 @@ const router= createBrowserRouter([
       },
       {
         path:"/onboarding",
-        element:<OnBoarding/>
+        element:
+        <ProtectedRoute>
+          <OnBoarding/>
+        </ProtectedRoute>
       },
       {
         path:"/joblisting",
-        element:<JobListing/>
+        element:<ProtectedRoute><JobListing/></ProtectedRoute>
       },
       {
         path:"/jobspage",
-        element:<JobsPage/>
+        element:<ProtectedRoute><JobsPage/></ProtectedRoute>
       },
       {
         path:"/jobpage/:id",
-        element:<JobPage/>
+        element:<ProtectedRoute><JobPage/></ProtectedRoute>
       },
       {
         path:"/postjob",
-        element:<PostJob/>
+        element:<ProtectedRoute><PostJob/></ProtectedRoute>
       },
       {
         path:"/savejobs",
-        element:<SaveJobs/>
+        element:<ProtectedRoute><SaveJobs/></ProtectedRoute>
       },
       {
         path:"/myjobs",
-        element:<MyJob/>
+        element:<ProtectedRoute><MyJob/></ProtectedRoute>
       }
 
 

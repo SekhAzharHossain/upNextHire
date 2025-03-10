@@ -20,6 +20,16 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+import faqs from "../data/faq.json"
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+
 
 const LandingPage = () => {
   return <main className=' flex flex-col gap-10 sm:gap-20 py-10 sm:py-20'>
@@ -54,24 +64,24 @@ const LandingPage = () => {
 
     {/* banner */}
     <div className=' flex justify-center items-center '>
-      <img className=' w-5/6 rounded-2xl opacity-50' src='/banner.png' alt='banner'/>
+      <img className=' w-5/6 rounded-2xl ' src='/banner2.png' alt='banner'/>
     </div>
 
   
     <div className='w-full flex justify-center items-center'>
-      <section className=' flex w-5/6 justify-between items-center'>
+      <section className=' flex w-5/6 justify-between items-center gap-2'>
         {/* card */}
-        <Card >
+        <Card className="h-32 w-xl">
           <CardHeader>
-            <CardTitle>For Job Seekers</CardTitle>
-            <CardDescription>Search and apply for jobs, track applications, and more.</CardDescription>
+            <CardTitle className="text-xl font-bold">For Job Seekers</CardTitle>
+            <CardDescription className=" text-white">Search and apply for jobs, track applications, and more.</CardDescription>
           </CardHeader>
         </Card>
 
-        <Card>
+        <Card className="h-32 w-xl">
           <CardHeader>
-            <CardTitle>For Employers</CardTitle>
-            <CardDescription>Post jobs, applications, and find the best candidates</CardDescription>
+            <CardTitle className="text-xl font-bold">For Employers</CardTitle>
+            <CardDescription className="text-white">Post jobs, applications, and find the best candidates</CardDescription>
           </CardHeader>
 
         </Card>
@@ -81,6 +91,22 @@ const LandingPage = () => {
 
 
     {/* accordion */}
+    <div className='mx-10 md:mx-20 sm:mx-30'>
+      <Accordion type="single" collapsible>
+        {faqs.map((faq,index)=>{
+          return(
+          <AccordionItem value={`item-${index}`} key={index}>
+            <AccordionTrigger>{faq.question}</AccordionTrigger>
+            <AccordionContent>
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+          )
+        })}
+
+      </Accordion>
+    </div>
+
 
   </main>
 }
