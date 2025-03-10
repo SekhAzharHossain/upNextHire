@@ -6,7 +6,7 @@ const Header = () => {
   return <>
     <nav className=' mx-4 py-4 flex justify-between items-center'>
         <Link>
-            <img src="../public/logo.png" alt="UpNextHire" className=' h-20'/>
+            <img src="/logo.png" alt="UpNextHire" className=' h-20'/>
         </Link>
 
         <Button variant="outline">Login</Button>

@@ -10,6 +10,8 @@ import SaveJobs from "./pages/SaveJobs"
 import MyJob from "./pages/MyJob"
 import JobListing from "./pages/JobListing"
 
+import { supabase } from '../utils/supabase'
+
 import { ThemeProvider } from "./components/theme-provider"
 
 const router= createBrowserRouter([

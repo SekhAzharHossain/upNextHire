@@ -1,0 +1,44 @@
+let data=[
+    {
+        "name":"amazon",
+        "path":"/companies/amazon.svg",
+        "id":1,
+    },
+    {
+        "name":"atlassian",
+        "path":"/companies/atlassian.svg",
+        "id":2,
+    },
+    {
+        "name":"gooble",
+        "path":"/companies/google.webp",
+        "id":3,
+    },
+    {
+        "name":"ibm",
+        "path":"/companies/ibm.svg",
+        "id":4,
+    },
+    {
+        "name":"meta",
+        "path":"/companies/meta.svg",
+        "id":5,
+    },
+    {
+        "name":"microsoft",
+        "path":"/companies/microsoft.webp",
+        "id":6,
+    },
+    {
+        "name":"netflix",
+        "path":"/companies/netflix.png",
+        "id":7,
+    },
+    {
+        "name":"uber",
+        "path":"/companies/uber.svg",
+        "id":8,
+    },
+];
+
+export default data;
